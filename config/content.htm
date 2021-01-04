@@ -503,3 +503,73 @@ for i in range(len(cReadSplit)):
 <p>When you are writing the solution, first try to write it without binary search. Then when you want to try implementing binary search, write a separate function. In the solution I will give an example for how to write a binary search in Python.</p>
 <p><strong>Happy coding!</strong><br/>Forgot how to submit exercises?</p>
 <p></p>
+<p><strong>解碼網頁</strong> <br/>這是此博客的第一個4辣椒練習！我們將看看人們的想法，並決定將來是否繼續進行4辣椒練習。</p>
+<p><strong>練習17（和解決方案）</strong><br/>使用BeautifulSoup和requestsPython軟件包在《紐約時報》主頁上打印出所有文章標題的列表。</p>
+<p><strong>討論區</strong><br/>本週的概念：</p>
+<p><strong>圖書館</strong><br/>requests<br/>BeautifulSoup<br/>圖書館<br/>許多人都使用Python編寫了一些庫，這些庫不是Python的標準發行版所附帶的（就像上一篇文章中random提到的庫一樣）。這些庫可以執行從機器學習到日期和時間格式化到模因生成的所有操作。如果您有需要完成的任務，很可能有人為它編寫了一個庫。</p>
+<p>使用庫時，要牢記三件事：</p>
+<p>您需要安裝它。與Windows或OSX相比，在基於GNU / Linux的系統上的安裝通常會更容易，但是始終會有有關如何執行此操作的文檔。<br/>您需要導入它。在程序的頂部，確保您編寫了lineimport requests或庫的名稱。然後，您可以使用它來滿足您的需求。<br/>您需要閱讀文檔。有人寫的，所以規則可能不那麼明顯。編寫Python程序包的任何人（或任何小組）都會為其編寫文檔。最終，閱讀文檔將成為第二天性。<br/>要求<br/>最近為Python編寫的最有用的庫之一，請求執行“人類HTTP”。用外行的話來說，這意味著它向Python詢問互聯網問題。當您鍵入“ facebook”時。com ”進入瀏覽器，您正在要求互聯網顯示您的Facebook主頁。</p>
+<p>同樣，程序可以向互聯網詢問一些信息。它可能不是“向我顯示Facebook”，但是例如，您可以要求Github提供用戶“ mprat”擁有的所有存儲庫的列表。您可以使用API（應用程序編程接口）來執行此操作。本練習不使用API，因此我們將在以後的文章中進一步討論。</p>
+<p>返迴向用戶顯示網頁。當我輸入“ facebook”時。com ”進入瀏覽器，Facebook向我的瀏覽器發送了一堆HTML（基本上是有關網站外觀的代碼）。然後瀏覽器將這個HTML並以漂亮的方式顯示給我。（有趣的事實：要在瀏覽器中查看任何頁面的HTML，請右鍵單擊該頁面，然後根據您的瀏覽器單擊“檢查元素”或“查看源代碼”。在Chrome中，“檢查元素”將在底部彈出一個模塊您可以在頁面的其中看到HTML。如果您需要使用此HTML做任何事情，最好使用一個程序。 ）如果我想“查看”帶有程序的網頁，我所要做的就是向其索要HTML並閱讀它。</p>
+<p>“請求”庫完成了一半的工作：它向服務器請求（如果需要的話）信息。這可能只是數據（通過API-稍後介紹），或者在本練習中為HTML。</p>
+<p>查看文檔以獲取所需的所有詳細信息。在此特定的最新版本中，向網站詢問其HTML所需要做的就是：</p>
+<p>import requests<br/> url = 'http://github.com'<br/> r = requests.get(url)<br/> r_html = r.text<br/>現在，在變量中r_html，您將頁面的HTML作為字符串。讀取（否則稱為parsing）發生在另一個Python包中。</p>
+<p>美麗湯<br/>為了解決解析（讀取，理解，解釋）從我們獲得的HTML字符串的問題requests，我們使用了BeautifulSoup庫。</p>
+<p>它的作用是為文檔中的HTML提供分層結構（金字塔結構）。如果您對HTML一無所知，請參閱Wikipedia文章。出於本練習的目的，除了能夠快速查看HTML外，您無需了解其他任何有關HTML的知識。</p>
+<p>因為BeautifulSoup要為我們解釋HTML，所以我們可以提出類似的要求：“給我所有帶&lt;p&gt;標籤的行”或“為元素找到父&lt;title&gt;元素”，等等。</p>
+<p>您的代碼如下所示：</p>
+<p>from bs4 import BeautifulSoup</p>
+<p># some requests code here for getting r_html</p>
+<p>soup = BeautifulSoup(r_html)<br/> title = soup.find('span', 'articletitle').string<br/>您可以在中進行更多操作BeautifulSoup，但是我將讓您自己或通過其他後續練習來探索這些內容。</p>
+<p><strong>祝您編碼愉快！</strong><br/>忘記瞭如何提交練習？</p>
+<p><strong>牛和公牛</strong> <br/><strong>練習18（和解決方案）</strong><br/>創建一個程序，將與用戶一起玩“牛與牛”遊戲。遊戲的工作原理如下：</p>
+<p>隨機生成一個4位數字。要求用戶猜測一個4位數字。對於用戶在正確位置正確猜到的每個數字，他們都有一個“牛”。用戶在錯誤的位置正確猜出的每個數字都是“牛”。每次用戶猜測時，告訴他們他們有多少“牛”和“牛”。一旦用戶猜出正確的數字，遊戲就結束了。跟踪用戶在整個遊戲中所做的猜測數量，並在最後告訴用戶。</p>
+<p>假設計算機生成的數字是1038。交互示例如下所示：</p>
+<p>Welcome to the Cows and Bulls Game! <br/> Enter a number: <br/> &gt;&gt;&gt; 1234<br/> 2 cows, 0 bulls<br/> &gt;&gt;&gt; 1256<br/> 1 cow, 1 bull<br/> ...<br/>直到用戶猜出數字。</p>
+<p><strong>本週的概念：</strong><br/>隨機性（我們之前已經討論過幾次了。主要是在以前的練習中。）<br/>功能（也在上一練習中介紹過）<br/>主要方法<br/><strong>主要方法</strong><br/>由於我們已經涵蓋了隨機性和函數，因此我們仍然需要涵蓋“主”方法的思想。如果您以前進行過編程，您會想知道為什麼到目前為止您的Python代碼中不需要主要方法。</p>
+<p>首先，這是您的操作方法：</p>
+<p>def square(num):<br/> return num * num</p>
+<p>if __name__=="__main__":<br/> user_num = input("Give me a number: ")<br/> print(square(num))<br/>請注意，在__name__和中__main__，都有兩個下劃線（_）字符。</p>
+<p>如果您運行該程序，它的行為將與預期的一樣：要求使用數字並打印出正方形。但是，您可能想知道-到目前為止，這與我們編寫程序的方式有何不同？</p>
+<p>def square(num):<br/> return num * num</p>
+<p>user_num = input("Give me a number: ")<br/> print(square(num))<br/>如果您認為第二個示例將具有與第一種情況相同的行為，則您是正確的。至少到現在為止，我們一直在運行Python文件的方式。我將嘗試解釋。</p>
+<p>Python沒有像許多其他語言一樣具有指定的入口點（例如，C ++始終尋找void main()要運行的方法）。Python解釋器逐行執行Python文件和程序，但是會運行Python文件或程序。當解釋器到達函數的定義時，該函數不會運行，而是會加載以供以後運行。（在上一篇文章中討論函數時，我們進行了討論。）在函數外部編寫的任何內容都將立即執行-這包括創建變量和調用先前加載的函數。</p>
+<p>有（最常見的）兩種運行Python文件的方式：</p>
+<p>“僅運行它”（您可以從終端通過IDLE中的“運行”按鈕執行此操作，等等）<br/>將文件導入為模塊<br/>第一種方法是您在本博客中進行練習時最可能使用的方法。如果大型項目中有許多文件，這就是在項目中運行“入口點”文件的方式。</p>
+<p>第二種方法更加微妙：這是import在文件頂部編寫一條語句時發生的。例如，在本練習中，您需要import random進入程序才能使用隨機模塊。在計算機上的某個地方，有一個文件（或一組Python文件）組成了該random模塊，並且在導入它們的過程中，您實際上正在做的是從該模塊運行文件。</p>
+<p>當您在文件內部定義了函數（使用def關鍵字，如def square上面的函數）並運行文件時，該函數不會立即運行。您可以認為會發生什麼事，該函數已存儲以備將來使用。</p>
+<p>運行Python文件時，文件中的所有其他內容-創建的變量，調用的函數，完成的操作等-都會立即執行。</p>
+<p>但是，在將Python文件導入到另一個文件的情況下，您希望加載所有函數而不創建變量或執行任何函數。您只想加載它們以供以後使用。您如何調和這個問題？隨著if __name__=="__main__"聲明。在此語句中創建變量和所有函數，並且在將文件導入另一個語句時，它不會通過創建變量或調用函數而使程序混亂。</p>
+<p>什麼if __name__=="__main__"從上面的語句的作用是確保所創建的變量，這被稱為功能，即完成操作，等等，只有當你直接運行該文件，而不是當你將它導入到另一個。</p>
+<p><strong>祝您編碼愉快！</strong><br/>忘記瞭如何提交練習？</p>
+<p><strong>解碼網頁二</strong> <br/><strong>練習19（和解決方案）</strong><br/>使用requests和BeautifulSoupPython庫，在此網站上將文章的全文打印到屏幕上：http : //www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture。</p>
+<p>這篇文章很長，因此分為4頁。您的任務是將文本打印到屏幕上，以便無需單擊任何按鈕即可閱讀全文。</p>
+<p>（提示：此處的帖子詳細介紹瞭如何通過此處發布的練習的解決方案使用BeautifulSoup和requests庫。）</p>
+<p>這只會將文章的全文打印到屏幕上。它不會使其易於閱讀，因此在下一個練習中，我們將學習如何將此文本寫入.txt文件。</p>
+<p><strong>討論區</strong><br/><strong>在網頁上檢查HTML</strong><br/>如果您忘記瞭如何檢查網頁的HTML，請查看上一個練習的詳細解決方案，以獲取非常詳細的說明。簡單來說：</p>
+<p>在Chrome中打開網頁。<br/>右鍵單擊頁面，然後單擊“檢查元素”<br/>使用頁面左下方的放大鏡單擊頁面元素並查看其屬性。<br/><strong>祝您編碼愉快！</strong><br/>忘記瞭如何提交練習？</p>
+<p></p>
+<p><strong>元素搜索 </strong><br/><strong>練習20（和解決方案）</strong><br/>編寫一個函數，該函數接受一個有序的數字列表（一個元素從最小到最大的順序列表）和另一個數字。該函數確定給定的數字是否在列表中，並返回（然後打印）適當的布爾值。</p>
+<p>附加功能：</p>
+<p>使用二進制搜索。<br/><strong>討論區</strong><br/>主題：</p>
+<p><strong>布爾值</strong>-對與錯<br/>平等測試<br/>二進制搜索<br/>布爾值<br/>在編寫程序時，通常會需要根據其他事物的真實性來做出決策。基本上，您需要根據某物是TRUE還是FALSE來做出決定。</p>
+<p>一個明顯的例子是使用條件句時：</p>
+<p>michele_age = 22<br/> truth_value = michele_age &gt; 17<br/> if (truth_value):<br/> print("Michele can see a rated R movie")<br/>（我們在上一篇文章中討論了這種有條件的想法。）</p>
+<p>但是幕後發生的事情是該語句michele_age &gt; 17正在被評估為Trueor或類型False。然後將其存儲在變量中truth_value，然後在條件中進行決策。</p>
+<p>這是另一個示例：</p>
+<p>while True:<br/> age = input("How old are you? ")<br/> if age &gt;= 17: <br/> print("can see a rated R movie")<br/> elif age &lt; 17 and age &gt; 12:<br/> print("can see a rated PG-13 movie")<br/> else: <br/> print("can only see rated PG movies")<br/>該while True語句在代碼段開頭的作用是繼續詢問年齡並打印響應-它永遠不會停止。（要停止它，請在終端或Python Shell中按CTRL-C）。</p>
+<p>這些類型的-True和False被稱為布爾類型或布爾變量。它們只能採用True或的兩個值False。</p>
+<p>要更廣泛地了解Python布爾值，請查看這些 資源。</p>
+<p><strong>字符串相等性測試</strong><br/>在場景中，您需要測試事物是否彼此相等-數字或字符串或其他。我們在上一篇文章中介紹了這個想法，但是這次還是值得再來一次。</p>
+<p>好東西很容易！</p>
+<p>請記住，比較數字是否相等是用一個==符號完成的，如下所示：</p>
+<p>age = 21<br/> if age == 21:<br/> print("You are 21!")<br/> elif age &gt; 21:<br/> print("You're old.")<br/> else:<br/> print("Young one!")<br/>事實證明，使用a==來檢查相等性和!=檢查不相等性，比較字符串同樣（嘿，..）很簡單。</p>
+<p>password = "unsafepassword"<br/> if password == "unsafepassword":<br/> print("You may enter.")<br/> else:<br/> print("Try again!")<br/>或者，使用更實用的密碼檢查代碼：</p>
+<p>real_password = "unsafepassword"<br/> user_password = input("Enter the password: ")<br/> while user_password != real_password:<br/> user_password = input("Enter the password: ")<br/> print("You may enter!")<br/><strong>二進制搜索</strong><br/>有多種方法可以搜索列表中的元素，但沒有一種正確的方法可以搜索列表中的元素。該練習的目的是讓您思考有關列表，搜索和排序的整個練習序列中搜索列表中元素的可能方法。剛開始時，此練習可能看起來很愚蠢且容易，但是您越深入該主題，就越困難。</p>
+<p>“二進制”一詞表示有兩種選擇（在計算機中，通常是0或1，但實際上表示在兩種情況之間可以選擇）。“搜索”是尋找東西。因此，二進制搜索背後的主要思想是以某種方式查找內容，該方式可以為您提供決策樹，以查找位置，其中包含兩個選擇。讓我舉一個例子：</p>
+<p>讓我們看一下清單a = [1, 3, 5, 30, 42, 43, 500]。它是一個“有序列表”，或者是列表中元素從小到大的列表。假設我們想知道元素9是否在列表中。這是我們的工作：</p>
+<p>查看列表中的中間元素-它是“ 30”。*'9 &lt;30'，因此讓我們忽略'30'右邊的元素。<br/>現在我們正在查看的新列表[1, 3, 5]。<br/>看一下這個新列表的中間元素-是3。<br/>'9&gt; 3'，因此忽略左側的元素3。<br/>我們正在查看的新列表是[5]。<br/>該列表只有一個元素，而沒有9。<br/>9 不在列表中。<br/>該示例顯示的是，在有序列表中，知道要查找的元素與列表中另一個元素的比較方式，將列表分為兩部分-元素可以位於其中一半，而絕對不能位於其中。在我們的列表包含數百萬個元素的情況下，知道我們可以將“搜索空間”減少一半，這將大大提高效率。</p>
+<p>在編寫解決方案時，請首先嘗試在不進行二進制搜索的情況下編寫它。然後，當您想嘗試實現二進制搜索時，編寫一個單獨的函數。在解決方案中，我將給出一個示例，說明如何使用Python編寫二進制搜索。</p>
+<p><strong>祝您編碼愉快！</strong><br/>忘記瞭如何提交練習？</p>
+<p></p>
+<p></p>
