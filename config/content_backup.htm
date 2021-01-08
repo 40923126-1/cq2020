@@ -137,29 +137,38 @@ cReadSplit = cRead.split(" ")
 for i in range(len(cReadSplit)):
     print(cReadSplit[i])</pre>
 <h1>hw1</h1>
+<h3>page 61</h3>
 <p>在本課程中，我們將更深入地研究可插入主板的擴展卡。我們將重點介紹視頻卡的安裝。重要的是要注意，安裝視頻卡的相同原理將適用於安裝任何擴展卡。接下來，我們將介紹兩個主要製造商的中央處理單元：英特爾和AMD。最後，我們將回顧計算機可以使用的存儲設備。</p>
-<p><strong>擴展插槽</strong><br/>擴充卡用於增加和擴展計算機的功能。我們可以添加執行各種功能的卡，例如添加更多USB，串行或併行端口。基於通信的卡還可以通過添加調製解調器或網卡來擴展計算機的功能集。想要玩更多遊戲的用戶可能會發現添加具有更好圖形功能的新視頻卡很有用。試圖節省空間的用戶可以添加電視調諧器擴展卡，以使計算機像電視一樣觀看電纜，並像DVR一樣錄製節目。不過，最常見的是，擴展槽用於添加新端口和新功能，例如在創建計算機時最初不可用的端口和功能，例如eSATA，FireWire或USB 3.0端口。</p>
-<p><strong>PCI / PCI-X插槽</strong><br/>擴展插槽是主板上用於擴展卡的插槽。我們將討論的第一個擴展插槽是CompTIA A +硬件考試涵蓋的最早的插槽：外圍組件互連（PCI）。PCI最初是在1990年代初開發的，旨在為網絡，視頻，音頻，I / O（輸入/輸出），調製解調器和存儲主機適配器卡提供擴展插槽。它取代了較早的技術，例如行業標準體系結構（ISA）卡，以提供更快，更強大的擴展卡插槽。發現它是支持最大總線速度的32位接口 33 MHz。後來，它還以66 MHz的速度提供了64位版本，但是即使這樣也不夠快，無法滿足對更快CPU的不斷增長的需求。隨之而來的升級稱為PCI-X，它是一種更快的64位版本，以133 MHz的總線速度運行。該PCI-X在仍然具有PCI / PCI-X插槽的現代計算機中可以找到，它與舊的PCI卡完全向後兼容，但是如果將它們與更新的PCI-X卡混合使用，則主板默認設置為較慢PCI速度。最新版本的PCI-X 2.0支持最高266 MHz至533 MHz的速度，但已被PCIe（PCI Express）卡插槽標準所取代，以實現更好的速度/性能。</p>
+<p><span style="color: #0000ff;"><strong>擴展插槽</strong></span><br/>擴充卡用於增加和擴展計算機的功能。我們可以添加執行各種功能的卡，例如添加更多USB，串行或併行端口。基於通信的卡還可以通過添加調製解調器或網卡來擴展計算機的功能集。想要玩更多遊戲的用戶可能會發現添加具有更好圖形功能的新視頻卡很有用。試圖節省空間的用戶可以添加電視調諧器擴展卡，以使計算機像電視一樣觀看電纜，並像DVR一樣錄製節目。不過，最常見的是，擴展槽用於添加新端口和新功能，例如在創建計算機時最初不可用的端口和功能，例如eSATA，FireWire或USB 3.0端口。</p>
+<p><span style="color: #0000ff;"><strong>PCI / PCI-X插槽</strong></span><br/>擴展插槽是主板上用於擴展卡的插槽。我們將討論的第一個擴展插槽是CompTIA A +硬件考試涵蓋的最早的插槽：外圍組件互連（PCI）。PCI最初是在1990年代初開發的，旨在為網絡，視頻，音頻，I / O（輸入/輸出），調製解調器和存儲主機適配器卡提供擴展插槽。它取代了較早的技術，例如行業標準體系結構（ISA）卡，以提供更快，更強大的擴展卡插槽。發現它是支持最大總線速度的32位接口 33 MHz。後來，它還以66 MHz的速度提供了64位版本，但是即使這樣也不夠快，無法滿足對更快CPU的不斷增長的需求。隨之而來的升級稱為PCI-X，它是一種更快的64位版本，以133 MHz的總線速度運行。該PCI-X在仍然具有PCI / PCI-X插槽的現代計算機中可以找到，它與舊的PCI卡完全向後兼容，但是如果將它們與更新的PCI-X卡混合使用，則主板默認設置為較慢PCI速度。最新版本的PCI-X 2.0支持最高266 MHz至533 MHz的速度，但已被PCIe（PCI Express）卡插槽標準所取代，以實現更好的速度/性能。</p>
 <p>PCI支持32位或64位I / O總線，從而與486和Pentium計算機兼容。以下是有關此廣告位的一些事實：</p>
 <p>該總線獨立於處理器（CPU和PCI總線可以同時處理）。<br/>PCI是即插即用的，這意味著可以自動檢測和配置新安裝的設備。<br/>PCI總線最常用於聲卡，調製解調器，網卡和存儲設備控制器等設備。<br/>儘管也使用了64位版本，但PCI總線通常為32位寬。它以33 MHz的速度運行，可以133 Mbps的速率傳輸數據（對於64位版本，則為266 Mbps的速率）。<br/>PCI是支持32位和64位數據路徑的I / O總線，並且自Intel 80486（1989）芯片組通過所有版本的Pentium，Apple Computers和AMD芯片組以來，一直是標準的擴展總線。儘管PCI絕對是傳統架構，已被PCIe和Thunderbolt接口取代，但它仍包含在當前主板上，並且肯定可以在大多數計算機工作站的服務中找到。</p>
-<p><strong>概要</strong><br/>PCI總線獨立於系統總線運行，從而可以使用擴展卡更快地訪問外圍設備。<br/>PCI是BIOS和現代操作系統（WinXP +，Linux和Apple）中的PnP。<br/>常見的PCI總線擴展卡包括聲卡，USB卡，Firewire卡，網絡卡，存儲設備控制器（SCSI）卡和調製解調器卡。<br/>PCI版本最初使用32位數據路徑，最終使用64位數據路徑，速度如下：<br/>133 MB / s（32位，33 MHz –標準配置）<br/>266 MB / s（66 MHz時為32位或33 MHz時為64位）<br/>533 MB / s（66 MHz時為64位）</p>
+<p><span style="color: #0000ff;"><strong>概要</strong></span><br/>PCI總線獨立於系統總線運行，從而可以使用擴展卡更快地訪問外圍設備。<br/>PCI是BIOS和現代操作系統（WinXP +，Linux和Apple）中的PnP。<br/>常見的PCI總線擴展卡包括聲卡，USB卡，Firewire卡，網絡卡，存儲設備控制器（SCSI）卡和調製解調器卡。<br/>PCI版本最初使用32位數據路徑，最終使用64位數據路徑，速度如下：<br/>133 MB / s（32位，33 MHz –標準配置）<br/>266 MB / s（66 MHz時為32位或33 MHz時為64位）<br/>533 MB / s（66 MHz時為64位）</p>
 <p>資料來源：https : //en.wikipedia.org/wiki/Conventional_PCI</p>
 <p>                          <img alt="image1.png (297×222)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image1.png"/></p>
 <p>擴展卡，板上和安裝有芯片。 它握在一個人的手中。<br/>擴充卡。照片由Emilian Robert Vicol根據CC-BY許可使用。</p>
+<p></p>
+<h3>page 62</h3>
+<p></p>
 <p>由於PCI對於1990年代後期推出的最新3D遊戲而言太慢，因此需要專門用於圖形的新標準端口。1996年，高級圖形端口（AGP）正式發布，並因其對高速視頻的需求而受到3D遊戲玩家的歡迎。它最初是作為1x品種引入的，但是由於需要更快的速度，所以添加了其他品種，包括2x，4x和8x AGP。每個品種使用不同的電量，如下表所示。</p>
 <p><img alt="image2.png (388×259)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image2.png"/></p>
 <p>AGP在很長一段時間內一直處於主導地位，但是PCIe（PCI Express）的引入最終導致了流行度的大幅下降，因為PCIe的速度能夠超過AGP並為所有設備提供單一的插槽類型。</p>
 <p>提供AGP支持的主板有一個AGP插槽。這些年來，已經實現了AGP的幾種不同版本：</p>
 <p>AGP 1.0 1x：以66 MHz運行，數據吞吐率為266 MBps。<br/>AGP 1.0 2x：以66 MHz運行，數據吞吐率為533 MBps。<br/>AGP 2.0 4x：以66 MHz運行，數據吞吐率為1066 MBps。<br/>AGP 3.0 8x：以66 MHz運行，數據吞吐率為2133 MBps。</p>
 <p><img alt="image3.png (383×287)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image3.png"/></p>
-<p><br/>PCI Express（PCIe）擴展插槽<br/>PCIe（PCI Express）到2005年開始取代PCI，PCI-X和AGP。PCIe有五個插槽大小可供選擇：x1，x2，x4，x8和x16。雖然x8是官方標準，但它不是很常見，很難在主板和卡上找到。兩種最常見的PCIe卡是x1和x16。PCIe x1旨在通過連接到南橋來替代用於網絡，調製解調器，音頻，輸入/輸出和其他需求的舊PCI卡。另一方面，PCIe x16專注於替換高速圖形卡的AGP和PCI-X，並連接到北橋。大多數主板支持多種類型的PCIe，具有多個x1和一個或兩個x16卡插槽。值得注意的是，較小的PCIe卡可以放入較大的PCIe插槽中，反之亦然。例如，PCIe x2可以插入PCIe x8，</p>
+<p></p>
+<p><span style="color: #0000ff;">PCI Express（PCIe）擴展插槽</span></p>
+<p><br/>PCIe（PCI Express）到2005年開始取代PCI，PCI-X和AGP。PCIe有五個插槽大小可供選擇：x1，x2，x4，x8和x16。雖然x8是官方標準，但它不是很常見，很難在主板和卡上找到。兩種最常見的PCIe卡是x1和x16。PCIe x1旨在通過連接到南橋來替代用於網絡，調製解調器，音頻，輸入/輸出和其他需求的舊PCI卡。另一方面，PCIe x16專注於替換高速圖形卡的AGP和PCI-X，並連接到北橋。大多數主板支持多種類型的PCIe，具有多個x1和一個或兩個x16卡插槽。值得注意的是，較小的PCIe卡可以放入較大的PCIe插槽中，反之亦然。例如，PCIe x2可以插入PCIe x8，</p>
 <p>PCIe被認為是下一代I / O總線體系結構。每個PCIe插槽（而不是共享總線）鏈接到交換機，該交換機通過點對點專用連接對數據進行優先級排序和路由，並提供串行全雙工傳輸方法。PCIe插槽有不同版本。可以為插入插槽中的卡分配的最大通道數取決於卡的版本。基本PCIe提供一個通道用於傳輸（x1），傳輸速率為250 MBps。它還可以提供多個傳輸通道（x2，x4，x8，x16，x32）。較新版本的PCIe可以在每個通道上以更高的速率傳輸數據：</p>
 <p>PCIe版本1：250 MBps<br/>PCIe版本2：500 MBps<br/>PCIe版本3：1 Gbps<br/>PCIe版本4：2 Gbps<br/>PCIe卡通過大小和帶寬功能指定。例如，基於其數據傳輸速率，可以將卡標識為“吞吐量高達2 Gbps的單通道（x1）PCIe”，這將表明該卡是x1大小的卡和版本4的卡。請注意，“ Gbps”是指“千兆位每秒”，它是數據傳輸速率的度量。請勿將其與“ GB”或“ GB”混淆，後者是指設備的存儲容量。連接中的數據通道數量表示卡與主機之間的帶寬量：更多的通道等於更多的帶寬。PCIe x32卡可提供最大帶寬，但是由於其尺寸而很少使用。</p>
 <p><img alt="Various_PCIe_Slots.jpg (327×291)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/Various_PCIe_Slots.jpg"/></p>
 <p>除了大大提高速度外，PCIe還提供更高質量的服務。PCIe向後兼容，並允許傳統PCI技術在同一系統中運行（即，您可以在同一系統中同時擁有PCIe和PCI總線）。PCIe總線在現代計算機系統中最常用於視頻卡，儘管幾乎所有其他設備都可以設計用於PCIe插槽。</p>
 <p>小型計算機，例如筆記本電腦或微型ATX系統，可能包含一個微型PCI插槽。Mini-PCI設備是具有100或124針的小型卡。mini-PCI插槽的典型用法是向筆記本電腦添加內部卡（例如無線卡和蜂窩卡）。</p>
-<p><img alt="image5.jpeg (592×501)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image5.jpeg"/><br/>AMR和CNR插槽<br/>音頻調製解調器提升板（AMR）卡是一種特殊類型的卡，用於將其他卡裝入緊湊的空間。在下面的照片中，您可以看到垂直電路板已插入主板，然後是水平連接的PCIe x1卡。該垂直卡是轉接卡。AMR允許在轉接卡上使用模擬調製解調器和音頻連接器。通信網絡Riser卡（CNR）已在很大程度上取代了AMR，並允許在Riser卡上支持六通道數字音頻，網絡功能和其他高質量的集成音頻。最初從製造商處購買時，所有這些轉接卡都是專有的，並且與主板捆綁在一起。您不能將一個製造商的轉接卡與另一製造商的主板一起使用；它們是不可互換的。</p>
+<p><img alt="image5.jpeg (592×501)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image5.jpeg"/><br/><span style="color: #0000ff;">AMR和CNR插槽</span></p>
+<p><br/>音頻調製解調器提升板（AMR）卡是一種特殊類型的卡，用於將其他卡裝入緊湊的空間。在下面的照片中，您可以看到垂直電路板已插入主板，然後是水平連接的PCIe x1卡。該垂直卡是轉接卡。AMR允許在轉接卡上使用模擬調製解調器和音頻連接器。通信網絡Riser卡（CNR）已在很大程度上取代了AMR，並允許在Riser卡上支持六通道數字音頻，網絡功能和其他高質量的集成音頻。最初從製造商處購買時，所有這些轉接卡都是專有的，並且與主板捆綁在一起。您不能將一個製造商的轉接卡與另一製造商的主板一起使用；它們是不可互換的。</p>
 <p><img alt="image6.png (504×205)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image6.png"/></p>
+<p></p>
+<h3>page 63</h3>
 <p>中央處理單元也稱為CPU或處理器。處理器採用兩種主要架構：32位和64位。我們將32位處理器（或為這些處理器設計的應用程序）表示為x86。64位處理器和應用程序表示為x64。您可以從Intel或AMD購買CPU，並且可能是x86或x64，因為兩家公司都生產這兩種類型。x64處理器允許更大的文件大小，更多的內存以及復雜的程序，以更快，更高效地運行。可以區分CPU類型的三件事：1）套接字類型（哪個CPU將適合哪個套接字）；2）單核或多核設計；3）緩存的大小。儘管Intel和AMD在運行Windows操作系統方面完全兼容，</p>
 <p><img alt="image7.jpeg (600×600)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image7.jpeg"/>英特爾長期以來一直在生產處理器，其現代處理器均使用陸地網格陣列（LGA）插槽樣式。LGA使用彈簧加載的“平台”，該平台與處理器的底部連接，並通過鉸鍊式夾緊機構將處理器固定在主板上。然後將散熱器卡入處理器插槽四個角上的安裝孔。</p>
 <p><img alt="image8.jpeg (640×480)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image8.jpeg"/></p>
@@ -169,17 +178,34 @@ for i in range(len(cReadSplit)):
 <p><img alt="image9.png (288×216)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image9.png"/></p>
 <p>除940系列外，AMD通常在其命名約定中使用字母。注意“ 940”沒有重複的兩位數。因此，您可以說它不是Intel處理器，而是AMD處理器。您需要通過考試知道的所有其他其他家庭都列出了以下字母：AM2，AM2 +，AM3，AM3 +和FM1。AMD還使用了另一種插座樣式，稱為引腳網格陣列（PGA）。CPU背面的引腳通過零插入力（ZIF）機制連接到處理器插槽。散熱器夾在處理器兩側的安裝凸耳上，而不是英特爾使用的四個角。除“ F”系列外，所有AMD插槽均為PGA。</p>
 <p><img alt="image10.jpeg (640×358)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image10.jpeg"/></p>
-<p><br/><strong>超頻</strong><br/>超頻是指以高於正常設計規格允許的速度運行處理器，組件或總線的過程。如果支持，可以在計算機的BIOS中進行配置。這是非常危險的做法，因為它會導致系統不穩定，從而導致崩潰和更高的錯誤率。此外，超頻組件會使它們運行溫度更高，這可能會損壞它們並縮短其使用壽命。超頻會消耗更多的功率，從而產生更多的熱量並需要更多的散熱。不建議大多數用戶對計算機進行超頻，並且切勿在生產（工作）計算機上使用該計算機。超頻在遊戲界非常流行，並且需要使用專門的冷卻系統，例如液體冷卻。</p>
-<p><strong>選擇處理器</strong><br/>那麼哪個插座和處理器更好：Intel還是AMD？這取決於用戶。對於大多數用戶來說，它們是相當等效的。但是喜歡對自己的計算機超頻的高端遊戲玩家傾向於選擇AMD，因為它比Intel系統支持更多的超頻。</p>
-<p><strong>CPU緩存</strong><br/>CPU不僅僅是處理器-它還包含高速緩存。這是非常少量的內存，可為CPU提供最快的內存。大多數CPU具有1級和2級緩存，但有些甚至具有3級緩存。由於處理器的運行速度如此之快，我們希望將最常用的信息存儲在緩存中以加快處理速度。當處理器需要信息時，它首先檢查“最近”的位置（1級緩存）。如果信息不在1級緩存中，則CPU將檢查2級，然後是3級。如果信息不在這兩個緩存級中的任何一個中，則CPU會到達系統RAM（下一個最快的位置），如果信息不存在，則CPU將查找硬盤驅動器（最慢的位置）。</p>
+<p><br/><span style="color: #0000ff;"><strong>超頻</strong></span><br/>超頻是指以高於正常設計規格允許的速度運行處理器，組件或總線的過程。如果支持，可以在計算機的BIOS中進行配置。這是非常危險的做法，因為它會導致系統不穩定，從而導致崩潰和更高的錯誤率。此外，超頻組件會使它們運行溫度更高，這可能會損壞它們並縮短其使用壽命。超頻會消耗更多的功率，從而產生更多的熱量並需要更多的散熱。不建議大多數用戶對計算機進行超頻，並且切勿在生產（工作）計算機上使用該計算機。超頻在遊戲界非常流行，並且需要使用專門的冷卻系統，例如液體冷卻。</p>
+<p><span style="color: #0000ff;"><strong>選擇處理器</strong></span><br/>那麼哪個插座和處理器更好：Intel還是AMD？這取決於用戶。對於大多數用戶來說，它們是相當等效的。但是喜歡對自己的計算機超頻的高端遊戲玩家傾向於選擇AMD，因為它比Intel系統支持更多的超頻。</p>
+<p><span style="color: #0000ff;"><strong>CPU緩存</strong></span><br/>CPU不僅僅是處理器-它還包含高速緩存。這是非常少量的內存，可為CPU提供最快的內存。大多數CPU具有1級和2級緩存，但有些甚至具有3級緩存。由於處理器的運行速度如此之快，我們希望將最常用的信息存儲在緩存中以加快處理速度。當處理器需要信息時，它首先檢查“最近”的位置（1級緩存）。如果信息不在1級緩存中，則CPU將檢查2級，然後是3級。如果信息不在這兩個緩存級中的任何一個中，則CPU會到達系統RAM（下一個最快的位置），如果信息不存在，則CPU將查找硬盤驅動器（最慢的位置）。</p>
 <p>通過使能處理器使用最近的內存位置（緩存），而不是從主內存中檢索信息，可以通過使用緩存來提高系統性能。</p>
+<div>
+<div class="youtube" id="uwrap__i_8"><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" enablejsapi="1" frameborder="0" height="360" id="_i_8" src="https://www.youtube.com/embed/FWxtFTHO1ak?enablejsapi=1&amp;rel=0&amp;vq=large" width="640"></iframe></div>
+</div>
+<div>
+<div class="youtube" id="uwrap__i_9"><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" enablejsapi="1" frameborder="0" height="360" id="_i_9" src="https://www.youtube.com/embed/0PliMca_kVQ?enablejsapi=1&amp;rel=0&amp;vq=large" width="640"></iframe></div>
+</div>
+<div actguid="d87f2e310a0001dc45da32145d68dc43" class="asx" inlineparams="inlineClient=%2Fsuperactivity%2Fassessment2%2FInlineAssessmentClient.swf&amp;activityMode=delivery&amp;activityContextGUID=d87f2e310a0001dc45da32145d68dc43&amp;userGUID=40923126%40gm.nfu.edu.tw&amp;activityService=%2Fjcourse%2Fa2%2Frest&amp;webContentPath=%2Frepository%2Fwebcontent%2Fd826575d0a0001dc3e9f244fa018c560%2F&amp;logService=%2Flog%2Fserver&amp;">
+<div class="activitywrap purpose learnbydoing flash" id="dpch07_lbd05">
+<div class="activityhead">
+<div class="purposeType purposelearnbydoing" title=""></div>
+</div>
+</div>
+</div>
+<h3>page 64</h3>
 <p>最重要的是緩存和性能-更大的緩存可提高CPU性能。</p>
 <p>在前面，我們提到了各種類型的擴充卡。現在我們將專注於視頻/圖形卡。視頻卡種類繁多，並以多種不同的命名約定出售，例如圖形卡，圖形加速卡或圖形適配器。這些卡是附加卡，可創建您在顯示屏/監視器上看到的圖像。它們可以有多種擴展卡類型以適合各種擴展插槽，例如當前占主導地位的PCI Express（PCIe），高級圖形端口（AGP）或較舊的PCI插槽。儘管許多低端台式機都在CPU中集成了圖形芯片，而不是使用專用卡，但這不適用於3D遊戲或CAD / CAM（計算機輔助製造）工作站。因此，許多用戶會選擇使用附加圖形卡，</p>
 <p><img alt="image12.png (289×192)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image12.png"/></p>
 <p>視頻卡包含一個非常強大的處理器，稱為圖形處理單元（GPU），該處理器執行渲染大多數遊戲所需的3D圖像時涉及的大量數學計算。這種廣泛的處理過程會產生大量熱量。因此，正確冷卻圖形卡至關重要。許多卡（尤其是功率較低的卡）將使用無源散熱器進行安靜操作，或者依靠機箱風扇散熱。實際上，大多數現代圖形卡都使用專用的冷卻風扇和散熱罩來更好地冷卻，但是由於涉及的風扇噪音很大，而且經常需要外部電源，因此它們的噪音要大得多。上圖顯示了一個視頻卡的示例，該視頻卡帶有一個封閉的導流罩和活動的冷卻風扇，可將熱量從卡中散出。</p>
 <p>安裝視頻卡與安裝任何其他擴展卡非常相似。首先，您必須進入BIOS並確保已啟用插槽（AGP或PCIe x16）。這可能需要進行一些配置更改，例如AGP速度，關閉板載圖形芯片或調整圖形內存大小。接下來，您將要關閉機器電源，斷開電源，使用適當的ESD預防措施，然後將新的擴充卡安裝到正確的插槽中。接下來，將顯示器連接到插卡，將計算機重新插入電源插座，然後打開計算機電源。一旦計算機啟動進入操作系統，您將需要安裝設備驅動程序，以確保操作系統可以提供新卡中可用的最佳圖形。</p>
-<p><strong>視頻輸出</strong><br/>視頻輸出來自基於主板芯片組或圖形卡芯片組的各種類型的連接器。過去幾十年來一直使用的標準是VGA（視頻圖形適配器），它是一種DB-15樣式的連接器。VGA依靠向傳統的計算機顯示器提供高質量的模擬輸出。該連接器的端口是下圖左側的藍色端口。</p>
+<p><span style="color: #0000ff;"><strong>視頻輸出</strong></span></p>
+<p><br/>視頻輸出來自基於主板芯片組或圖形卡芯片組的各種類型的連接器。過去幾十年來一直使用的標準是VGA（視頻圖形適配器），它是一種DB-15樣式的連接器。VGA依靠向傳統的計算機顯示器提供高質量的模擬輸出。該連接器的端口是下圖左側的藍色端口。</p>
+<p></p>
 <p><img alt="image13.png (391×113)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image13.png"/></p>
+<p></p>
 <p>下一個連接器端口（稱為DVI或數字視頻接口），在上方的照片中間以白色顯示。它具有DVI-D（僅用於數字輸出）或DVI-I（用於可提供數字或模擬輸出的集成輸出）的品種。DVI-I連接器也可以與適配器一起使用，以在模擬模式下與傳統VGA顯示器一起使用。</p>
 <p>圖像右側顯示的第三個連接器是HDMI或高清多媒體接口連接。HDMI帶有三種標準連接器類型：A型（標準），C型（微型）和D型（微型）。儘管有B型的名稱，但目前尚未被任何製造商採用。2.0版支持支持4K UHD和HDR的設備。微型HDMI已被移動電話市場廣泛採用，並且幾乎包含在所有當前型號中。HDMI的特殊之處在於，它不僅限於承載視頻，還可以通過一根HDMI電纜同時傳輸音頻和視頻。HDMI是全數字的，不支持模擬顯示。</p>
 <p>另一個連接器是DisplayPort，它具有兩種尺寸，如下圖所示。DisplayPort由視頻電子標準協會（VESA）設計。迷你DisplayPort是Apple在2008年發布的標準，在2009年被VESA採納，並包含在1.2版中（https://en.wikipedia.org/wiki/DisplayPort#1.2）。</p>
@@ -196,21 +222,26 @@ for i in range(len(cReadSplit)):
 <p>最後，我們擁有最古老的視頻界麵類型，即復合視頻。這是迄今為止我們討論過的所有類型中質量最低的產品。該電纜還使用輸出為480p的RCA連接器。該電纜通過一條RCA電纜（通常標記為“視頻”）合併所有視頻信號，並且連接器本身為黃色。複合視頻電纜僅在模擬信號和音頻信號分開的情況下工作。Composite與Component的不同之處在於音頻電纜與Composite Video（紅色，白色，黃色）捆綁在一起，而Component總共使用了五根電纜（紅色，綠色，藍色用於視頻，標準紅色和白色用於音頻）。</p>
 <p><img alt="image17.jpeg (640×427)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image17.jpeg"/></p>
 <p>複合視頻RCA電纜連接器。照片由Dani Armengol Garreta根據CC-BY-NC許可使用。</p>
+<h3><span style="color: #000000;">page 65</span></h3>
 <p>在下面的實驗室中，您應該安裝擴展視頻卡。確保使用正確的ESD預防措施，以避免損壞易碎的組件。</p>
+<h3>page 66</h3>
+<p></p>
 <p>正如我們在上一個模塊中討論的那樣，存儲是一種使計算機成為計算機的功能。因此，存儲設備是關鍵組件。存儲設備保留構成我們處理的數據，照片，音樂等的所有位和字節。現代計算機使用許多不同類型的存儲設備，包括硬盤驅動器，光盤驅動器和外部驅動器。某些計算機仍具有舊式存儲設備，例如軟盤。</p>
-<p><strong>存儲設備：光盤驅動器</strong><br/>光盤驅動器是指使用光盤，CD或DVD或藍光光盤等任何光學介質的磁盤驅動器。由於激光讀取磁盤所使用的光波長不同，每個磁盤具有不同的存儲容量，而較短的波長使更多數據可以存儲在同一物理空間中。CD使用的紅外光波長很長。DVD使用紅色激光，即中等波長的光。藍光使用波長最短的藍色激光。CD可以容納700 MB的數據或80分鐘的音樂，DVD可以在標準光盤上容納4.7 GB，在雙層光盤上可以容納8.4 GB。藍光磁盤在標準磁盤上可以容納25 GB，在雙層磁盤上可以容納50 GB。大多數當代工作站都有DVD刻錄機，但是藍光刻錄機正變得越來越普遍。也，每種相繼的技術都向後兼容，因此藍光播放器還可以讀取DVD和CD。但是，CD或DVD播放器無法讀取藍光。</p>
+<p><span style="color: #0000ff;"><strong>存儲設備：光盤驅動器</strong></span><br/>光盤驅動器是指使用光盤，CD或DVD或藍光光盤等任何光學介質的磁盤驅動器。由於激光讀取磁盤所使用的光波長不同，每個磁盤具有不同的存儲容量，而較短的波長使更多數據可以存儲在同一物理空間中。CD使用的紅外光波長很長。DVD使用紅色激光，即中等波長的光。藍光使用波長最短的藍色激光。CD可以容納700 MB的數據或80分鐘的音樂，DVD可以在標準光盤上容納4.7 GB，在雙層光盤上可以容納8.4 GB。藍光磁盤在標準磁盤上可以容納25 GB，在雙層磁盤上可以容納50 GB。大多數當代工作站都有DVD刻錄機，但是藍光刻錄機正變得越來越普遍。也，每種相繼的技術都向後兼容，因此藍光播放器還可以讀取DVD和CD。但是，CD或DVD播放器無法讀取藍光。</p>
 <p>不同的設備為其功能使用不同的命名法。CD-ROM，DVD-ROM和BD-ROM（藍光）均表示該設備是只讀存儲器（ROM）設備。只能記錄一次的設備用“ R”標識。在CD-R，DVD-R，DVD + R或BD-R上，第一次寫入後無法更改光盤的內容。第三類設備被標識為“ RW”設備，稱為多次寫入，寫入/重寫或可擦除。此類別包括CD-RW，DVD-RW，DVD + RW，DVD-RAM和BD-RE光盤類型。</p>
 <p>光盤驅動器的速度用“ X等級”描述。原始CD播放器的讀取速度為1倍（一次）或150 KBps。1X速度是音頻CD驅動器播放您喜歡的歌曲的速度。DVD播放器的運行速度為1.385 MBps（因此，該類型設備的速度為1倍）。藍光播放器的運行速度為4.5 MBps。購買驅動器時，您會看到列出的等級，例如52X CD播放器，這意味著它的運行速度是原始150 KBps或7800 KBps（7.8 MBps）的52倍。每個設備的1X等效於在傳統播放器中聆聽音樂CD，觀看DVD或觀看藍光電影。</p>
-<p><strong>存儲設備：外部設備</strong><br/>eSATA是用於外部設備的SATA的擴展。該端口看起來與常規SATA端口相同，並且使用與SATA端口相同的電纜。可以認為使用eSATA就像使用一根延長線。它將SATA端口連接到計算機機箱的外部。如果您的計算機沒有eSATA端口，則可以購買適合擴展插槽的eSATA主機適配器，例如PCIe x1或PCIe x4。eSATA的速度可以達到3–6 Gbps，與USB 3.0的5 Gbps速度非常可比。</p>
+<p><span style="color: #0000ff;"><strong>存儲設備：外部設備</strong></span><br/>eSATA是用於外部設備的SATA的擴展。該端口看起來與常規SATA端口相同，並且使用與SATA端口相同的電纜。可以認為使用eSATA就像使用一根延長線。它將SATA端口連接到計算機機箱的外部。如果您的計算機沒有eSATA端口，則可以購買適合擴展插槽的eSATA主機適配器，例如PCIe x1或PCIe x4。eSATA的速度可以達到3–6 Gbps，與USB 3.0的5 Gbps速度非常可比。</p>
 <p><img alt="image18.png (282×190)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image18.png"/></p>
 <p>另一種存儲方式是閃存卡。它是一種無需通電即可保留其內容的內存，並且非常耐用。這些通常用於數字媒體播放器，相機和USB拇指驅動器。這些卡種類繁多，創建了將近50種不同的類型，但只有少數幾種很常見。這些普通卡包括SD，MMC，Memory Stick和XD。某些計算機為這些帶有內存插槽的卡內置了讀卡器，但是如果您的計算機沒有，則可以通過USB添加外部多插槽讀卡器，價格約為10美元。</p>
 <p><img alt="image19.png (370×246)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image19.png"/></p>
 <p>USB閃存驅動器在當今很普遍，並且已取代軟盤作為首選的可移動介質。它們的物理尺寸很小，內存容量也很大，能夠在單個“棒”上存儲64 GB或更多的數據。它們很受歡迎且易於使用，因為它們不需要特殊的讀卡器，因為USB設備內置了一個。它們通常使用FAT-16，FAT-32或exFAT文件系統進行格式化，並且可以直接使用。只需將設備插入可用的USB端口，操作系統即可識別它，然後您就可以開始復制，刪除和修改文件了。</p>
 <p><img alt="image20.jpeg (450×259)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image20.jpeg"/></p>
-<p><br/><strong>存儲設備：舊版設備</strong><br/>直到1990年代後期，軟盤一直在可移動存儲領域佔據著主導地位，現在在大多數組織中它們幾乎已經滅絕。雖然某些可移動USB拇指驅動器可以存儲64 GB或更多的數據，但是軟盤通常僅存儲1.44 MB的數據。這意味著一個拇指驅動器可以存儲來自60,000多個軟盤的信息！軟盤使用柔性磁性介質，並由剛性塑料盒包圍。最常見的軟盤（如左圖所示）是3.5英寸的軟盤，它是根據塑料盒內部磁性介質的直徑來命名的。過去通常在每台計算機上都找到軟盤驅動器，該軟盤驅動器是使用minimolex或BERG電源電纜以及34針內部IDE / PATA電纜連接的。現代機器通常沒有這些驅動器，因為它們已經失去了公眾的青睞。如果需要軟盤驅動器，可以用不到20美元的價格購買一個軟盤驅動器，它可以使用USB端口連接到計算機。Windows始終為軟盤驅動器（FDD）保留A：\和B：\驅動器，即使您的系統沒有該驅動器也是如此。</p>
+<p><br/><span style="color: #0000ff;"><strong>存儲設備：舊版設備</strong></span><br/>直到1990年代後期，軟盤一直在可移動存儲領域佔據著主導地位，現在在大多數組織中它們幾乎已經滅絕。雖然某些可移動USB拇指驅動器可以存儲64 GB或更多的數據，但是軟盤通常僅存儲1.44 MB的數據。這意味著一個拇指驅動器可以存儲來自60,000多個軟盤的信息！軟盤使用柔性磁性介質，並由剛性塑料盒包圍。最常見的軟盤（如左圖所示）是3.5英寸的軟盤，它是根據塑料盒內部磁性介質的直徑來命名的。過去通常在每台計算機上都找到軟盤驅動器，該軟盤驅動器是使用minimolex或BERG電源電纜以及34針內部IDE / PATA電纜連接的。現代機器通常沒有這些驅動器，因為它們已經失去了公眾的青睞。如果需要軟盤驅動器，可以用不到20美元的價格購買一個軟盤驅動器，它可以使用USB端口連接到計算機。Windows始終為軟盤驅動器（FDD）保留A：\和B：\驅動器，即使您的系統沒有該驅動器也是如此。</p>
 <p><img alt="image21.png (335×210)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image21.png"/></p>
 <p>最終的舊式存儲設備是磁帶機。儘管FDD如今已完全停用，但磁帶驅動器仍在某些公司環境中使用。但是，雲計算是替換企業環境中磁帶備份的自然解決方案，因為它不僅可以自動執行備份過程，而且可以安全地將數據發送到異地。磁帶驅動器是最早用於備份系統數據的可移動存儲設備之一。現在，許多家庭用戶為此使用外部USB硬盤，但是許多企業環境仍然依賴於磁帶驅動器，因為它們可以存儲大量數據（單個磁帶上最多3 TB），並且可以輕鬆地傳輸這些數據。到遠程設施。磁帶可以本機（1：1）或壓縮（2：1）模式存儲數據。可以本機存儲70 GB的磁帶，在壓縮模式下可以存儲140 GB的數據。大多數磁帶機都通過SCSI端口連接，但有些可以使用IDE / PATA或SATA找到。另外，請務必記住，如果您使用的是磁帶驅動器系統，則必須旋轉磁帶以防止其磨損並製定良好的備份計劃。河內之塔是系統管理員使用的常見磁帶旋轉系統，可以幫助您創建旋轉模式。</p>
 <p><img alt="image22.png (215×248)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image22.png"/></p>
+<h3>page 67</h3>
+<p></p>
 <p>硬盤驅動器（HDD）是迄今為止個人計算機使用的最重要的存儲設備。這些驅動器存儲所有用戶的數據文件，應用程序和操作系統。無論驅動器是內部驅動器還是外部驅動器，其構建方式均相同。大多數驅動器是由一個或多個塗有磁性表面的鋁或玻璃雙面盤製成的。在第一個硬盤驅動器中，用戶很幸運地存儲了最多5 MB的數據，但是現在在大多數用戶的工作站中，500 GB至3 TB的存儲空間已司空見慣。毫無疑問，存儲已發展為具有最低性能和卓越性能的擴展存儲容量。<img alt="image23.jpeg (600×409)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image23.jpeg"/></p>
 <p>硬盤。版權所有：karn 2608/123 RF Stock Photo。<img alt="image24.png (308×205)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image24.png"/></p>
 <p>硬盤解剖。照片由Roberto Fantana根據CC-BY-NC-ND許可 使用。</p>
@@ -226,6 +257,7 @@ for i in range(len(cReadSplit)):
 <p><img alt="image27.png (312×217)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image27.png"/></p>
 <p>要創建RAID陣列，工作站必須具有支持硬件RAID的PATA或SATA硬件控制器。有些主板本身支持這些主板，而另一些主板則需要用戶購買擴展卡才能執行這些功能。如果您的系統不支持硬件RAID，則Windows在所有系統上都支持軟件RAID，但是使用這種方法，您將失去主操作系統的RAID優勢。</p>
 <p>硬件RAID至少需要兩個硬盤用於RAID 0或RAID 1，至少三個磁盤用於RAID 5，以及至少四個磁盤用於RAID 10或RAID01。要創建軟件RAID，可以使用Windows的磁盤管理軟件來創建RAID。為數據驅動器和其他分區創建RAID。</p>
+<h3>page 68</h3>
 <p>計算機需要幾件事情才能正常運行：一種接收數據輸入的方法，一種處理數據的方法，一種輸出數據的方法以及一種存儲數據的方法。數據存儲已經發展了多年，但是最常見的存儲機制硬盤已經存在了35年以上。唯一真正的變化是物理大小（變得更小），邏輯大小（它們可以存儲更多數據），速度和連接器類型。最常見的連接器類型是SATA，PATA / IDE，SCSI，軟盤，eSATA，FireWire，USB和網絡連接，我們將分別討論它們。</p>
 <p>PATA（並行高級技術附件）自1980年代就出現了，但以前被稱為IDE（集成驅動電子設備）。這種類型的連接器使用由40線或80線組成的電纜（支持電纜選擇模式）。兩種類型的電纜的每端都有40個插針。較新樣式的電纜已進行了顏色編碼，因此藍色連接器連接至主板，黑色連接器連接至主（或主）設備，灰色連接器連接至輔助（或從屬）設備。此連接器類型用於硬盤驅動器，CD驅動器，DVD驅動器和某些磁帶備份驅動器。這些設備中的每一個都有跳線，必須將其設置為“主”，“從”或“電纜選擇”模式。“電纜選擇”消除了手動分配主機或從機的需要。每條電纜最多可支持兩個設備，但是每條電纜上只能使用一個主設備或從設備。使用這些設備之前，必須正確配置BIOS。儘管使用超直接內存訪問（UDMA）改進了EIDE接口，但串行ATA（SATA）不僅限於每個通道四個設備，而且訪問速度更快。</p>
 <p><img alt="image28.png (312×234)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image28.png"/></p>
@@ -237,28 +269,36 @@ for i in range(len(cReadSplit)):
 <p>SCSI或小型計算機系統接口支持將設備（內部或外部）與7個設備（窄SCSI）或15個設備（寬SCSI）進行菊花鏈連接。鏈中的每個設備都提供了一個設備ID號，該ID使用選擇器開關，DIP（雙列直插式封裝）開關或跳線塊進行配置。SCSI是一種較舊的技術，在很大程度上已被SATA和eSATA取代。窄SCSI只能支持高達40 MBps的速度，而寬SCSI可以支持高達320 MBps的速度。</p>
 <p><img alt="image31.png (320×240)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image31.png"/></p>
 <p>HP Surestore DAT驅動器，背面有兩個藍色SCSI端口。圖片由Gerben Wierda根據CC-BY-SA許可使用。</p>
+<h3>page 69</h3>
 <p>最初開發台式機時，它們的設計不允許熱插拔設備。熱交換是在計算機仍打開時添加或刪除設備的操作。在過去，用戶將關閉系統，關閉工作站電源，然後連接設備，然後重新啟動計算機，否則計算機將無法識別新設備。在1990年代後期，Windows操作系統開始允許熱插拔設備，包括USB和FireWire。這使用戶可以簡單地插入設備，等待幾秒鐘，然後開始使用它來存儲或檢索數據。由於這種熱交換，因此在拔出設備之前，用戶必須使用Windows中的“安全彈出驅動器”功能，這一點很重要，否則會導致數據丟失。SATA / eSATA也支持熱插拔，但前提是在BIOS中配置期間選擇了AHCI（高級主機控制器接口）。否則，驅動器將像舊的PATA / IDE設備一樣工作，並且不支持熱插拔。</p>
-<p><br/><strong>總覽</strong><br/>本模塊將討論熱源及其影響，以及冷卻CPU和系統的各種方法。</p>
-<p><strong>熱源</strong><br/>通過熱輻射產生的熱量是我們計算機電路內電磁運動的副產品。熱量是由電流在整個計算機中流動時遇到的內部電阻引起的，並且該電阻產生的熱量足以使計算機在機殼內部變得非常非常熱。根據所執行的特定操作，計算機的每個組件以不同的速率產生熱量。例如，CPU產生的熱量最多，因為它進行了大量的計算並消耗大量電能。另一個常見的熱量來源是圖形處理單元（GPU），當執行支持3D圖形（例如視頻遊戲中使用的圖形）所需的計算時，它將進行大量處理。通常，在遊戲過程中</p>
+<p></p>
+<h3>page 71</h3>
+<p><br/><span style="color: #0000ff;"><strong>總覽</strong></span><br/>本模塊將討論熱源及其影響，以及冷卻CPU和系統的各種方法。</p>
+<p><span style="color: #0000ff;"><strong>熱源</strong></span><br/>通過熱輻射產生的熱量是我們計算機電路內電磁運動的副產品。熱量是由電流在整個計算機中流動時遇到的內部電阻引起的，並且該電阻產生的熱量足以使計算機在機殼內部變得非常非常熱。根據所執行的特定操作，計算機的每個組件以不同的速率產生熱量。例如，CPU產生的熱量最多，因為它進行了大量的計算並消耗大量電能。另一個常見的熱量來源是圖形處理單元（GPU），當執行支持3D圖形（例如視頻遊戲中使用的圖形）所需的計算時，它將進行大量處理。通常，在遊戲過程中</p>
 <p>其他熱源包括硬盤和光盤驅動器，因為在讀/寫週期中磁盤的旋轉會因摩擦和電而產生熱量。產生大量熱量的計算機的另一個組件是PSU，它可以將交流電轉換為直流電。由於電源如此之大，因此電源通常具有自己的專用冷卻風扇。</p>
 <p>另一個潛在的熱源是計算機所在的房間。如果您在室溫較高的房間（例如華氏80度（27攝氏度））中工作，由於房間的環境條件，計算機必須從機器中清除其他內部熱量。</p>
-<p><strong>熱效應</strong><br/>如果計算機無法消除內部組件產生的熱量或環境熱量，則計算機的BIOS可能會指示密集型應用程序放慢速度，從而降低CPU的處理能力並最小化其熱量輸出。另外，BIOS實際上可以指示各種組件關閉，以避免過熱和對組件的可能損壞。這可能會導致整個系統關閉而不發出警告，並且可能會常規發生，除非計算機中裝有更高效的冷卻系統（例如更大，更高效的風扇）。在執行超頻的機器中或在冷卻風扇已損壞的系統中，系統關閉非常普遍。</p>
+<p><span style="color: #0000ff;"><strong>熱效應</strong></span><br/>如果計算機無法消除內部組件產生的熱量或環境熱量，則計算機的BIOS可能會指示密集型應用程序放慢速度，從而降低CPU的處理能力並最小化其熱量輸出。另外，BIOS實際上可以指示各種組件關閉，以避免過熱和對組件的可能損壞。這可能會導致整個系統關閉而不發出警告，並且可能會常規發生，除非計算機中裝有更高效的冷卻系統（例如更大，更高效的風扇）。在執行超頻的機器中或在冷卻風扇已損壞的系統中，系統關閉非常普遍。</p>
 <p>通常，最終用戶沒有跡象表明發生了過熱情況，但即使這樣也會造成嚴重後果。硬盤驅動器，CPU和GPU都對溫度變化敏感。由於設備組件的膨脹和收縮，特別是硬盤驅動器會因溫度變化而造成不可挽回的損害。這可能導致讀/寫錯誤，甚至導致磁盤驅動器完全故障。</p>
-<p><strong>減少熱量</strong><br/>有許多方法可以減少計算機中產生的熱量，但是最顯著的方法是使用散熱器，如下面的綠色圖片所示。散熱器通過傳導將熱量從敏感組件（例如CPU，GPU，北橋和南橋）吸走。然後，它使用散熱片在更寬的表面積上散熱。風扇通常在表面上移動空氣，以從散熱器中散熱，然後將其從系統背面的計算機排氣孔中推出。散熱器由鋁合金或銅製成，而鋁合金或銅是具有高導熱性的軟金屬。</p>
+<p><span style="color: #0000ff;"><strong>減少熱量</strong></span><br/>有許多方法可以減少計算機中產生的熱量，但是最顯著的方法是使用散熱器，如下面的綠色圖片所示。散熱器通過傳導將熱量從敏感組件（例如CPU，GPU，北橋和南橋）吸走。然後，它使用散熱片在更寬的表面積上散熱。風扇通常在表面上移動空氣，以從散熱器中散熱，然後將其從系統背面的計算機排氣孔中推出。散熱器由鋁合金或銅製成，而鋁合金或銅是具有高導熱性的軟金屬。</p>
 <p><img alt="image1.png (480×360)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH08/webcontent/PCH08/image1.png"/></p>
 <p>現代PC會產生大量熱量，並且需要同時使用散熱器和冷卻風扇來幫助氣流並減少熱量對附近組件的影響。機箱設計對於在機箱中產生良好的氣流很重要。就像打開房屋的門窗可以產生直通的風洞效果一樣，箱體也可以最大化氣流。另外，應捆紮和捆紮外殼內的電纜，以增加氣流並最大程度地冷卻。</p>
+<h3>page 72</h3>
 <p>大多數現代主板和BIOS支持對主板及其組件進行溫度監控。其名稱因製造商而異，但通常稱為PC運行狀況或溫度監控。對於支持超頻的主板，您可以在BIOS中配置設置以增加或減少處理能力，從而防止產生更多的熱量。CPU具有監視其溫度的傳感器，BIOS可以增加或減小風扇速度以控制CPU的溫度。但是請記住，通過減少功耗（並因此減少熱量），您同時也在降低CPU的性能。</p>
 <p><img alt="image2.png (480×360)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH08/webcontent/PCH08/image2.png"/></p>
 <p>BIOS系統溫度顯示。照片由Steve_L根據CC-BY-NC許可使用。</p>
+<h3>page 73</h3>
 <p>幾十年來，已經引入了各種冷卻方法，每種方法都有其自身的優點和缺點。</p>
 <p><strong>主動風冷</strong><br/>主動空氣冷卻組件由風扇和鋁或銅製成的冷卻板（散熱器）組成。風扇將新鮮空氣吹到放置在需要冷卻的組件上方的散熱器上。散熱器的散熱片增加了金屬板的表面，並增加了組件的熱交換能力。風扇在這些散熱片之間吹動空氣，從而使熱交換更快，更有效，因為它可以快速去除散熱片之間產生的熱空氣。主動空氣冷卻只有一個缺點：產生熱量的組件永遠不能冷卻到室溫以下。這是因為主動冷卻使用來自房間的強制空氣，並且房間的空氣無法將組件冷卻到低於環境溫度的溫度。這些組件非常可靠，</p>
 <p><strong>被動風冷</strong><br/>類似於主動空氣冷卻方法，被動空氣冷卻使用散熱器來創建較大的組件冷卻表面。不過，區別在於散熱器的大小，因為被動空氣冷卻僅依賴散熱片的大小來減少熱量。這些散熱片必須足夠大，並且它們之間還必須有足夠的空間，以便可以實現自然散熱，從而充分散熱。這些散熱器會變得很重，需要將特殊零件固定在要冷卻的零件上。就省電而言，被動式空氣冷卻是最有效的冷卻方式，因為它不使用任何電源進行操作。這種方法的缺點是重量大，因為必須將重型散熱器和大型散熱器固定在小零件上，從而增加了計算機的總重量並減小了機箱內部的可用面積。</p>
-<p><br/><strong>CPU散熱</strong><br/>在下面的實驗室中，您應該安裝一個新的CPU。為了本實驗的目的，我們為您卸下了計算機機箱。您還需要塗導熱膏，安裝散熱器和安裝冷卻風扇。在本實驗中，您可以假定已經採取了ESD預防措施。</p>
+<h3>page 74</h3>
+<p><br/><span style="color: #0000ff;"><strong>CPU散熱</strong></span><br/>在下面的實驗室中，您應該安裝一個新的CPU。為了本實驗的目的，我們為您卸下了計算機機箱。您還需要塗導熱膏，安裝散熱器和安裝冷卻風扇。在本實驗中，您可以假定已經採取了ESD預防措施。</p>
+<h3>page 75</h3>
 <p>以下步驟將使您能夠安裝機箱風扇。首先，在安裝系統中的任何組件之前，必須確保已關閉PC的電源。打開機箱後，您將需要使用十字螺絲刀來拆卸/安裝機箱風扇。如果要更換風扇，只需將舊風扇從機箱中擰出並從插頭（或MOLEX連接，如果您使用較舊的系統）上拔下電纜，即可將其卸下。要安裝新風扇，請將風扇保持在安裝位置，以使螺釘孔與外殼上的孔對齊。一隻手將風扇固定到位，另一隻手用四顆螺釘將其固定到位。某些型號使用塑料摩擦夾而不是螺釘將風扇固定到位。如果系統是這樣的，只需取消卡扣，卸下風扇，</p>
 <p>固定風扇後，需要將風扇連接到未使用的風扇接頭連接器上，以為風扇供電。標頭的鍵可確保正確連接，並防止您向後插入標頭。四針接頭連接器將與三針風扇一起使用，但是您將無法控制風扇速度，因為這只能由連接器中的第四針執行。</p>
 <p>安裝完風扇後，請確保使用正確的電纜管理技術和一些紮帶來布放風扇和其他電纜。適當的電纜管理可防止風扇在旋轉時撞到電纜，並有助於適當的氣流以提高冷卻效率。確保打開計算機電源，並確保風扇正常工作。<img alt="image5.png (720×540)" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH08/webcontent/PCH08/image5.png"/></p>
 <p>紅色機箱風扇。照片由“飛機道”根據CC-BY許可使用。</p>
 <p>在下面的實驗練習中，您應該卸下舊的機箱風扇並安裝新的機箱風扇。確保使用適當的安全預防措施。在本實驗中，您可以假定已經採取了ESD預防措施。</p>
+<p></p>
 <h1>原文</h1>
 <p>In this lesson, we will be going deeper into the expansion cards that can be plugged into motherboards. We will focus on the installation of a video card. It is important to note that the same principles for installing a video card will apply to installing any expansion card. Next, we will cover the central processing units from two major manufacturers: Intel and AMD. Finally, we will review the storage devices that our computers can use.</p>
 <p><strong>Expansion Slots</strong><br/>Expansion cards are used to increase and expand a computer’s capability. We can add cards that perform a variety of functions, such as adding more USB, serial, or parallel ports. Communication-based cards can also expand the feature set of the computer through adding a modem or network card. Users who want to play more games may find it useful to add a new video card with better graphics capabilities. Users trying to conserve space could add a TV tuner expansion card to allow the computer to act like a TV to watch cable and record shows like a DVR. Most commonly, though, expansion slots are used to add new ports and features that were not originally available when the computer was made, such as eSATA, FireWire, or USB 3.0 ports.</p>
@@ -502,4 +542,74 @@ for i in range(len(cReadSplit)):
 <p>Look at the middle element in the list - it is ‘30’. * ‘9 &lt; 30’, so let us ignore the elements to the right of ‘30’.<br/>The new list we are looking at is now [1, 3, 5].<br/>Look at the middle element in this new list - it is 3.<br/>‘9 &gt; 3’, so ignore the elements to the left of 3.<br/>The new list we are looking at is [5].<br/>The list has one element and it is not 9.<br/>9 is not in the list.<br/>What the example shows is that in an ordered list, knowing how the element you are looking for compares to another element in the list splits the list in two - one half where the element can be, and one where it definitely cannot be. In the case where our list contains millions of elements, knowing that we can cut the “search space” in half is a great increase in efficiency.</p>
 <p>When you are writing the solution, first try to write it without binary search. Then when you want to try implementing binary search, write a separate function. In the solution I will give an example for how to write a binary search in Python.</p>
 <p><strong>Happy coding!</strong><br/>Forgot how to submit exercises?</p>
+<p></p>
+<p><strong>解碼網頁</strong> <br/>這是此博客的第一個4辣椒練習！我們將看看人們的想法，並決定將來是否繼續進行4辣椒練習。</p>
+<p><strong>練習17（和解決方案）</strong><br/>使用BeautifulSoup和requestsPython軟件包在《紐約時報》主頁上打印出所有文章標題的列表。</p>
+<p><strong>討論區</strong><br/>本週的概念：</p>
+<p><strong>圖書館</strong><br/>requests<br/>BeautifulSoup<br/>圖書館<br/>許多人都使用Python編寫了一些庫，這些庫不是Python的標準發行版所附帶的（就像上一篇文章中random提到的庫一樣）。這些庫可以執行從機器學習到日期和時間格式化到模因生成的所有操作。如果您有需要完成的任務，很可能有人為它編寫了一個庫。</p>
+<p>使用庫時，要牢記三件事：</p>
+<p>您需要安裝它。與Windows或OSX相比，在基於GNU / Linux的系統上的安裝通常會更容易，但是始終會有有關如何執行此操作的文檔。<br/>您需要導入它。在程序的頂部，確保您編寫了lineimport requests或庫的名稱。然後，您可以使用它來滿足您的需求。<br/>您需要閱讀文檔。有人寫的，所以規則可能不那麼明顯。編寫Python程序包的任何人（或任何小組）都會為其編寫文檔。最終，閱讀文檔將成為第二天性。<br/>要求<br/>最近為Python編寫的最有用的庫之一，請求執行“人類HTTP”。用外行的話來說，這意味著它向Python詢問互聯網問題。當您鍵入“ facebook”時。com ”進入瀏覽器，您正在要求互聯網顯示您的Facebook主頁。</p>
+<p>同樣，程序可以向互聯網詢問一些信息。它可能不是“向我顯示Facebook”，但是例如，您可以要求Github提供用戶“ mprat”擁有的所有存儲庫的列表。您可以使用API（應用程序編程接口）來執行此操作。本練習不使用API，因此我們將在以後的文章中進一步討論。</p>
+<p>返迴向用戶顯示網頁。當我輸入“ facebook”時。com ”進入瀏覽器，Facebook向我的瀏覽器發送了一堆HTML（基本上是有關網站外觀的代碼）。然後瀏覽器將這個HTML並以漂亮的方式顯示給我。（有趣的事實：要在瀏覽器中查看任何頁面的HTML，請右鍵單擊該頁面，然後根據您的瀏覽器單擊“檢查元素”或“查看源代碼”。在Chrome中，“檢查元素”將在底部彈出一個模塊您可以在頁面的其中看到HTML。如果您需要使用此HTML做任何事情，最好使用一個程序。 ）如果我想“查看”帶有程序的網頁，我所要做的就是向其索要HTML並閱讀它。</p>
+<p>“請求”庫完成了一半的工作：它向服務器請求（如果需要的話）信息。這可能只是數據（通過API-稍後介紹），或者在本練習中為HTML。</p>
+<p>查看文檔以獲取所需的所有詳細信息。在此特定的最新版本中，向網站詢問其HTML所需要做的就是：</p>
+<p>import requests<br/> url = 'http://github.com'<br/> r = requests.get(url)<br/> r_html = r.text<br/>現在，在變量中r_html，您將頁面的HTML作為字符串。讀取（否則稱為parsing）發生在另一個Python包中。</p>
+<p>美麗湯<br/>為了解決解析（讀取，理解，解釋）從我們獲得的HTML字符串的問題requests，我們使用了BeautifulSoup庫。</p>
+<p>它的作用是為文檔中的HTML提供分層結構（金字塔結構）。如果您對HTML一無所知，請參閱Wikipedia文章。出於本練習的目的，除了能夠快速查看HTML外，您無需了解其他任何有關HTML的知識。</p>
+<p>因為BeautifulSoup要為我們解釋HTML，所以我們可以提出類似的要求：“給我所有帶&lt;p&gt;標籤的行”或“為元素找到父&lt;title&gt;元素”，等等。</p>
+<p>您的代碼如下所示：</p>
+<p>from bs4 import BeautifulSoup</p>
+<p># some requests code here for getting r_html</p>
+<p>soup = BeautifulSoup(r_html)<br/> title = soup.find('span', 'articletitle').string<br/>您可以在中進行更多操作BeautifulSoup，但是我將讓您自己或通過其他後續練習來探索這些內容。</p>
+<p><strong>祝您編碼愉快！</strong><br/>忘記瞭如何提交練習？</p>
+<p><strong>牛和公牛</strong> <br/><strong>練習18（和解決方案）</strong><br/>創建一個程序，將與用戶一起玩“牛與牛”遊戲。遊戲的工作原理如下：</p>
+<p>隨機生成一個4位數字。要求用戶猜測一個4位數字。對於用戶在正確位置正確猜到的每個數字，他們都有一個“牛”。用戶在錯誤的位置正確猜出的每個數字都是“牛”。每次用戶猜測時，告訴他們他們有多少“牛”和“牛”。一旦用戶猜出正確的數字，遊戲就結束了。跟踪用戶在整個遊戲中所做的猜測數量，並在最後告訴用戶。</p>
+<p>假設計算機生成的數字是1038。交互示例如下所示：</p>
+<p>Welcome to the Cows and Bulls Game! <br/> Enter a number: <br/> &gt;&gt;&gt; 1234<br/> 2 cows, 0 bulls<br/> &gt;&gt;&gt; 1256<br/> 1 cow, 1 bull<br/> ...<br/>直到用戶猜出數字。</p>
+<p><strong>本週的概念：</strong><br/>隨機性（我們之前已經討論過幾次了。主要是在以前的練習中。）<br/>功能（也在上一練習中介紹過）<br/>主要方法<br/><strong>主要方法</strong><br/>由於我們已經涵蓋了隨機性和函數，因此我們仍然需要涵蓋“主”方法的思想。如果您以前進行過編程，您會想知道為什麼到目前為止您的Python代碼中不需要主要方法。</p>
+<p>首先，這是您的操作方法：</p>
+<p>def square(num):<br/> return num * num</p>
+<p>if __name__=="__main__":<br/> user_num = input("Give me a number: ")<br/> print(square(num))<br/>請注意，在__name__和中__main__，都有兩個下劃線（_）字符。</p>
+<p>如果您運行該程序，它的行為將與預期的一樣：要求使用數字並打印出正方形。但是，您可能想知道-到目前為止，這與我們編寫程序的方式有何不同？</p>
+<p>def square(num):<br/> return num * num</p>
+<p>user_num = input("Give me a number: ")<br/> print(square(num))<br/>如果您認為第二個示例將具有與第一種情況相同的行為，則您是正確的。至少到現在為止，我們一直在運行Python文件的方式。我將嘗試解釋。</p>
+<p>Python沒有像許多其他語言一樣具有指定的入口點（例如，C ++始終尋找void main()要運行的方法）。Python解釋器逐行執行Python文件和程序，但是會運行Python文件或程序。當解釋器到達函數的定義時，該函數不會運行，而是會加載以供以後運行。（在上一篇文章中討論函數時，我們進行了討論。）在函數外部編寫的任何內容都將立即執行-這包括創建變量和調用先前加載的函數。</p>
+<p>有（最常見的）兩種運行Python文件的方式：</p>
+<p>“僅運行它”（您可以從終端通過IDLE中的“運行”按鈕執行此操作，等等）<br/>將文件導入為模塊<br/>第一種方法是您在本博客中進行練習時最可能使用的方法。如果大型項目中有許多文件，這就是在項目中運行“入口點”文件的方式。</p>
+<p>第二種方法更加微妙：這是import在文件頂部編寫一條語句時發生的。例如，在本練習中，您需要import random進入程序才能使用隨機模塊。在計算機上的某個地方，有一個文件（或一組Python文件）組成了該random模塊，並且在導入它們的過程中，您實際上正在做的是從該模塊運行文件。</p>
+<p>當您在文件內部定義了函數（使用def關鍵字，如def square上面的函數）並運行文件時，該函數不會立即運行。您可以認為會發生什麼事，該函數已存儲以備將來使用。</p>
+<p>運行Python文件時，文件中的所有其他內容-創建的變量，調用的函數，完成的操作等-都會立即執行。</p>
+<p>但是，在將Python文件導入到另一個文件的情況下，您希望加載所有函數而不創建變量或執行任何函數。您只想加載它們以供以後使用。您如何調和這個問題？隨著if __name__=="__main__"聲明。在此語句中創建變量和所有函數，並且在將文件導入另一個語句時，它不會通過創建變量或調用函數而使程序混亂。</p>
+<p>什麼if __name__=="__main__"從上面的語句的作用是確保所創建的變量，這被稱為功能，即完成操作，等等，只有當你直接運行該文件，而不是當你將它導入到另一個。</p>
+<p><strong>祝您編碼愉快！</strong><br/>忘記瞭如何提交練習？</p>
+<p><strong>解碼網頁二</strong> <br/><strong>練習19（和解決方案）</strong><br/>使用requests和BeautifulSoupPython庫，在此網站上將文章的全文打印到屏幕上：http : //www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture。</p>
+<p>這篇文章很長，因此分為4頁。您的任務是將文本打印到屏幕上，以便無需單擊任何按鈕即可閱讀全文。</p>
+<p>（提示：此處的帖子詳細介紹瞭如何通過此處發布的練習的解決方案使用BeautifulSoup和requests庫。）</p>
+<p>這只會將文章的全文打印到屏幕上。它不會使其易於閱讀，因此在下一個練習中，我們將學習如何將此文本寫入.txt文件。</p>
+<p><strong>討論區</strong><br/><strong>在網頁上檢查HTML</strong><br/>如果您忘記瞭如何檢查網頁的HTML，請查看上一個練習的詳細解決方案，以獲取非常詳細的說明。簡單來說：</p>
+<p>在Chrome中打開網頁。<br/>右鍵單擊頁面，然後單擊“檢查元素”<br/>使用頁面左下方的放大鏡單擊頁面元素並查看其屬性。<br/><strong>祝您編碼愉快！</strong><br/>忘記瞭如何提交練習？</p>
+<p></p>
+<p><strong>元素搜索 </strong><br/><strong>練習20（和解決方案）</strong><br/>編寫一個函數，該函數接受一個有序的數字列表（一個元素從最小到最大的順序列表）和另一個數字。該函數確定給定的數字是否在列表中，並返回（然後打印）適當的布爾值。</p>
+<p>附加功能：</p>
+<p>使用二進制搜索。<br/><strong>討論區</strong><br/>主題：</p>
+<p><strong>布爾值</strong>-對與錯<br/>平等測試<br/>二進制搜索<br/>布爾值<br/>在編寫程序時，通常會需要根據其他事物的真實性來做出決策。基本上，您需要根據某物是TRUE還是FALSE來做出決定。</p>
+<p>一個明顯的例子是使用條件句時：</p>
+<p>michele_age = 22<br/> truth_value = michele_age &gt; 17<br/> if (truth_value):<br/> print("Michele can see a rated R movie")<br/>（我們在上一篇文章中討論了這種有條件的想法。）</p>
+<p>但是幕後發生的事情是該語句michele_age &gt; 17正在被評估為Trueor或類型False。然後將其存儲在變量中truth_value，然後在條件中進行決策。</p>
+<p>這是另一個示例：</p>
+<p>while True:<br/> age = input("How old are you? ")<br/> if age &gt;= 17: <br/> print("can see a rated R movie")<br/> elif age &lt; 17 and age &gt; 12:<br/> print("can see a rated PG-13 movie")<br/> else: <br/> print("can only see rated PG movies")<br/>該while True語句在代碼段開頭的作用是繼續詢問年齡並打印響應-它永遠不會停止。（要停止它，請在終端或Python Shell中按CTRL-C）。</p>
+<p>這些類型的-True和False被稱為布爾類型或布爾變量。它們只能採用True或的兩個值False。</p>
+<p>要更廣泛地了解Python布爾值，請查看這些 資源。</p>
+<p><strong>字符串相等性測試</strong><br/>在場景中，您需要測試事物是否彼此相等-數字或字符串或其他。我們在上一篇文章中介紹了這個想法，但是這次還是值得再來一次。</p>
+<p>好東西很容易！</p>
+<p>請記住，比較數字是否相等是用一個==符號完成的，如下所示：</p>
+<p>age = 21<br/> if age == 21:<br/> print("You are 21!")<br/> elif age &gt; 21:<br/> print("You're old.")<br/> else:<br/> print("Young one!")<br/>事實證明，使用a==來檢查相等性和!=檢查不相等性，比較字符串同樣（嘿，..）很簡單。</p>
+<p>password = "unsafepassword"<br/> if password == "unsafepassword":<br/> print("You may enter.")<br/> else:<br/> print("Try again!")<br/>或者，使用更實用的密碼檢查代碼：</p>
+<p>real_password = "unsafepassword"<br/> user_password = input("Enter the password: ")<br/> while user_password != real_password:<br/> user_password = input("Enter the password: ")<br/> print("You may enter!")<br/><strong>二進制搜索</strong><br/>有多種方法可以搜索列表中的元素，但沒有一種正確的方法可以搜索列表中的元素。該練習的目的是讓您思考有關列表，搜索和排序的整個練習序列中搜索列表中元素的可能方法。剛開始時，此練習可能看起來很愚蠢且容易，但是您越深入該主題，就越困難。</p>
+<p>“二進制”一詞表示有兩種選擇（在計算機中，通常是0或1，但實際上表示在兩種情況之間可以選擇）。“搜索”是尋找東西。因此，二進制搜索背後的主要思想是以某種方式查找內容，該方式可以為您提供決策樹，以查找位置，其中包含兩個選擇。讓我舉一個例子：</p>
+<p>讓我們看一下清單a = [1, 3, 5, 30, 42, 43, 500]。它是一個“有序列表”，或者是列表中元素從小到大的列表。假設我們想知道元素9是否在列表中。這是我們的工作：</p>
+<p>查看列表中的中間元素-它是“ 30”。*'9 &lt;30'，因此讓我們忽略'30'右邊的元素。<br/>現在我們正在查看的新列表[1, 3, 5]。<br/>看一下這個新列表的中間元素-是3。<br/>'9&gt; 3'，因此忽略左側的元素3。<br/>我們正在查看的新列表是[5]。<br/>該列表只有一個元素，而沒有9。<br/>9 不在列表中。<br/>該示例顯示的是，在有序列表中，知道要查找的元素與列表中另一個元素的比較方式，將列表分為兩部分-元素可以位於其中一半，而絕對不能位於其中。在我們的列表包含數百萬個元素的情況下，知道我們可以將“搜索空間”減少一半，這將大大提高效率。</p>
+<p>在編寫解決方案時，請首先嘗試在不進行二進制搜索的情況下編寫它。然後，當您想嘗試實現二進制搜索時，編寫一個單獨的函數。在解決方案中，我將給出一個示例，說明如何使用Python編寫二進制搜索。</p>
+<p><strong>祝您編碼愉快！</strong><br/>忘記瞭如何提交練習？</p>
+<p></p>
 <p></p>
