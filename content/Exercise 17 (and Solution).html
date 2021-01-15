@@ -1,0 +1,273 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923126</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923126</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='Home.html'>Home</a><li class='has-children'><a href='Hint.html'>Hint</a><ul class='dropdown'><li><a href='gitlab-ci.yml.html'>gitlab-ci.yml</a></li></ul><li class='has-children'><a href='CMSiMDE.html'>CMSiMDE</a><ul class='dropdown'><li class='has-children'><a href='CMSiMDE 程式架構.html'>CMSiMDE 程式架構</a><ul class='dropdown'><li><a href='為何需要網際內容管理.html'>為何需要網際內容管理</a><li><a href='如何建立 CMSiMDE 子模組.html'>如何建立 CMSiMDE 子模組</a><li><a href='為何需要以子模組的設計.html'>為何需要以子模組的設計</a><li><a href='兩種不同的 git clone.html'>兩種不同的 git clone</a><li><a href='假如 CMSiMDE 不設為子模組.html'>假如 CMSiMDE 不設為子模組</a><li><a href='為何需要有動態網頁與靜態網頁.html'>為何需要有動態網頁與靜態網頁</a><li><a href='CMSiMDE 有甚麼使用上的限制嗎比方說能夠使用那些特殊符號, 為什麼不能使用分號, 以及所謂的標題有沒有最多幾個字元的限制, 另外就是假如標題過長, 會發生甚麼狀況與後果.html'>CMSiMDE 有甚麼使用上的限制嗎比方說能夠使用那些特殊符號, 為什麼不能使用分號, 以及所謂的標題有沒有最多幾個字元的限制, 另外就是假如標題過長, 會發生甚麼狀況與後果</a><li><a href='TEST.html'>TEST</a><li><a href='W8.html'>W8</a></li></li></ul></ul><li class='has-children'><a href='hw1.html'>hw1</a><ul class='dropdown'><li class='has-children'><a href='page 61-1.html'>page 61-1</a><ul class='dropdown'><li><a href='page 62-1.html'>page 62-1</a><li><a href='page 63-1.html'>page 63-1</a><li><a href='page 64-1.html'>page 64-1</a><li><a href='page 65-1.html'>page 65-1</a><li><a href='page 66-1.html'>page 66-1</a><li><a href='page 67-1.html'>page 67-1</a><li><a href='page 68-1.html'>page 68-1</a><li><a href='page 69-1.html'>page 69-1</a><li><a href='page 71-1.html'>page 71-1</a><li><a href='page 72-1.html'>page 72-1</a><li><a href='page 73-1.html'>page 73-1</a><li><a href='page 74-1.html'>page 74-1</a><li><a href='page 75-1.html'>page 75-1</a></li></li></ul></ul><li class='has-children'><a href='原文.html'>原文</a><ul class='dropdown'><li class='has-children'><a href='page 61-2.html'>page 61-2</a><ul class='dropdown'><li><a href='page 62-2.html'>page 62-2</a><li><a href='page 63-2.html'>page 63-2</a><li><a href='page 64-2.html'>page 64-2</a><li><a href='page 65-2.html'>page 65-2</a><li><a href='page 66-2.html'>page 66-2</a><li><a href='page 67-2.html'>page 67-2</a><li><a href='page 68-2.html'>page 68-2</a><li><a href='page 69-2.html'>page 69-2</a><li><a href='page 71-2.html'>page 71-2</a><li><a href='page 72-2.html'>page 72-2</a><li><a href='page 73-2.html'>page 73-2</a><li><a href='page 74-2.html'>page 74-2</a><li><a href='page 75-2.html'>page 75-2</a></li></li></ul></ul><li class='has-children'><a href='hw3.html'>hw3</a><ul class='dropdown'><li><a href='Exercise 17 (and Solution).html'>Exercise 17 (and Solution)</a><li><a href='練習17（和解決方案）.html'>練習17（和解決方案）</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">hw3 << <a href='hw3.html'>Previous</a> <a href='練習17（和解決方案）.html'>Next</a> >> 練習17（和解決方案）<br /><h1>Exercise 17 (and Solution)</h1>
+<p><br/>Use the BeautifulSoup and requests Python packages to print out a list of all the article titles on the New York Times homepage.</p>
+<p><strong>Discussion</strong><br/>Concepts for this week:</p>
+<p>Libraries<br/>requests<br/>BeautifulSoup</p>
+<p><strong>Libraries</strong><br/>Many people have written libraries in Python that do not come with the standard distribution of Python (like the random library mentioned in a previous post). These libraries can do anything from machine learning to date and time formatting to meme generation. If you have a task you need done, most likely someone has written a library for it.</p>
+<p>There are three main things to keep in mind when using a library:</p>
+<p>You need to install it. Installation in GNU/Linux based systems will generally be easier than on Windows or OSX, but there will always be documentation for how to do it.<br/>You need to import it. At the top of your program, make sure you write the line import requests, or whatever the name of your library is. Then you can use it to your heart’s content.<br/>You need to read documentation. Someone else wrote it, so the rules might not be so obvious. Anyone (or any group) that writes a Python package writes documentation for it. Eventually, reading documentation will become second nature.</p>
+<p><strong>Requests</strong><br/>One of the most useful libraries written for Python recently, requests does “HTTP for humans.” What this means in laymen’s terms is that it asks the internet things from Python. When you type “facebook.com” into the browser, you are asking the internet to show you Facebook’s homepage.</p>
+<p>In the same way, a program can ask the internet something. It might not be “show me Facebook”, but you can for example ask Github for a list of all the repositories that the user “mprat” has. You can do this with an API (Application Programming Interface). This exercise doesn’t use APIs, so we’ll talk more about those in a later post.</p>
+<p>Back to showing the user a webpage. When I type “facebook.com” into the browser, Facebook sends my browser a bunch of HTML (basically, code for how the website looks). The browser then takes this HTML and shows it to me in a pretty way. (Fun fact: to see the HTML of any page in a browser, right click on the page and “Inspect Element” or “View Source” depending on your browser. In Chrome, “Inspect Element” will pop up a module at the bottom of your page where you can see the HTML from the page. This trick will come in handy when you’re doing the exercise. If you need to DO anything with this HTML, better to use a program. More posts about this coming later.) If I want to “see” a webpage with a program, all I need to do is ask it for it’s HTML and read it.</p>
+<p>The ‘requests’ library does half of that job: it asks (requests, if you will) a server for information. This could be just data (through an API - more later) or in the case of this exercise, HTML.</p>
+<p>Look at the documentation for all the details you need. In this particular latest version, all you need to do to ask a website for it’s HTML is:</p>
+<p>import requests<br/> url = 'http://github.com'<br/> r = requests.get(url)<br/> r_html = r.text</p>
+<p>Now inside the variable r_html, you have the HTML of the page as a string. Reading (otherwise called parsing) happens with a different Python package.</p>
+<p><strong>BeautifulSoup</strong><br/>To solve our problem of parsing (reading, understanding, interpreting) the string of HTML we got from requests, we use the BeautifulSoup library.</p>
+<p>What it does is give a hierarchical (a pyramid structure) to the HTML in the document. If you don’t know anything about HTML, the Wikipedia article is a good summary. For the purposes of this exercise, you don’t need to know anything about HTML beyond being able to look at it quickly.</p>
+<p>Because BeautifulSoup takes care of interpreting our HTML for us, we can ask it things like: “give me all the lines with &lt;p&gt; tags” or “find me the parent element to the &lt;title&gt; element”, etc.</p>
+<p>Your code would look something like this:</p>
+<p>from bs4 import BeautifulSoup</p>
+<p># some requests code here for getting r_html</p>
+<p>soup = BeautifulSoup(r_html)<br/> title = soup.find('span', 'articletitle').string<br/>And you can do many more things in BeautifulSoup, but I will leave you to explore those by yourself or through other later exercises.</p>
+<p><strong>Happy coding!</strong><br/>Forgot how to submit exercises?</p>
+<p><strong></strong></p>
+<p><strong></strong></p>
+<p><strong>Cows And Bulls</strong></p>
+<p><br/><br/><strong>Exercise 18 (and Solution)</strong></p>
+<p><br/>Create a program that will play the “cows and bulls” game with the user. The game works like this:</p>
+<p>Randomly generate a 4-digit number. Ask the user to guess a 4-digit number. For every digit that the user guessed correctly in the correct place, they have a “cow”. For every digit the user guessed correctly in the wrong place is a “bull.” Every time the user makes a guess, tell them how many “cows” and “bulls” they have. Once the user guesses the correct number, the game is over. Keep track of the number of guesses the user makes throughout teh game and tell the user at the end.</p>
+<p>Say the number generated by the computer is 1038. An example interaction could look like this:</p>
+<p>Welcome to the Cows and Bulls Game! <br/> Enter a number: <br/> &gt;&gt;&gt; 1234<br/> 2 cows, 0 bulls<br/> &gt;&gt;&gt; 1256<br/> 1 cow, 1 bull<br/> ...</p>
+<p>Until the user guesses the number.</p>
+<p><strong>Concepts for this week:</strong><br/>Randomness (we’ve covered this a few times before. Mainly in a previous exercise.)<br/>Functions (covered in a previous exercise also)<br/>Main method<br/><strong>Main method</strong><br/>Since we have covered randomness and functions, we still need to cover the idea of a “main” method. If you have programmed before, you will wonder why you haven’t needed a main method so far in your Python code.</p>
+<p>First, here is how you do it:</p>
+<p>def square(num):<br/> return num * num</p>
+<p>if __name__=="__main__":<br/> user_num = input("Give me a number: ")<br/> print(square(num))</p>
+<p>Note that in both __name__ and __main__, there are TWO underscore (_) characters.</p>
+<p>If you run this program, it behaves as expected: asking the use for a number and printing out the square in return. However, you might be wondering - how is this different from the way we’ve been writing programs until this point?</p>
+<p>def square(num):<br/> return num * num</p>
+<p>user_num = input("Give me a number: ")<br/> print(square(num))<br/>You are correct if you think the second example will have THE SAME BEHAVIOR as in the first case. At least the way we’ve been running Python files until this point. I will attempt to explain.</p>
+<p>Python does not have a specified entry point like many other languages (for example, C++ always looks for a void main() method to run). Python files and programs are executed line by line by the Python interpreter, from however the Python file or program is run. When the definition of a function is reached by the interpreter, the function is not run, but rather loaded to be run later. (We discussed this when we talked about functions in a previous post.) Whatever is written outside of a function will get executed immediately - this includes creating variables and calling the functions that were previously loaded.</p>
+<p>There are (most commonly) two ways to run a Python file:</p>
+<p>“Just running it” (which you can do from the terminal, through the “Run” button in IDLE, etc.)<br/>Importing the file as a module<br/>The first way is the way that you most likely have been using if you have been doing the exercises in this blog. If you have many files in a large project, this is how you run the “entry point” file in the project.</p>
+<p>The second way is more subtle: it is what happens when you write an import statement at the top of your file. In this exercise for example, you need to import random into your program to use the random module. Somewhere on your computer there is a file (or a group of Python files) that make up the random module, and in the process of importing them, what you are actually doing is running the file(s) from that module.</p>
+<p>When you have functions defined inside a file (with the def keyword, like the def square function above) and run a file, the function is not immediately run. You can think what happens is the function is stored for future use.</p>
+<p>Anything else in the file - variables created, functions that are called, operations done, etc - are executed immediately when a Python file is run.</p>
+<p>However, in the case where you are importing a Python file into another, you want to load all of the functions without creating variables or executing any functions. You just want to load them to use them later. How do you reconcile this problem? With the if __name__=="__main__" statement. Create your variables and all your functions inside this statement, and when you import your file into another, it will not mess up your program by creating variables or calling functions.</p>
+<p>What the if __name__=="__main__" statement from above does is ensure that variables that are created, functions that are called, operations that are done, etc ONLY when you directly run the file, not when you import it into another.</p>
+<p><strong>Happy coding!</strong><br/>Forgot how to submit exercises?</p>
+<p><strong></strong></p>
+<p><strong></strong></p>
+<p><strong>Decode A Web Page Two</strong></p>
+<p><br/><br/><strong>Exercise 19 (and Solution)</strong></p>
+<p><br/>Using the requests and BeautifulSoup Python libraries, print to the screen the full text of the article on this website: http://www.vanityfair.com/society/2014/06/monica-lewinsky-humiliation-culture.</p>
+<p>The article is long, so it is split up between 4 pages. Your task is to print out the text to the screen so that you can read the full article without having to click any buttons.</p>
+<p>(Hint: The post here describes in detail how to use the BeautifulSoup and requests libraries through the solution of the exercise posted here.)</p>
+<p>This will just print the full text of the article to the screen. It will not make it easy to read, so next exercise we will learn how to write this text to a .txt file.</p>
+<p><strong>Discussion</strong><br/><strong>Inspecting HTML on a web page</strong><br/>If you have forgotten how to inspect the HTML of a web page, look at the detailed solution to the previous exercise for a very detailed explanation. In brief:</p>
+<p>Open the web page in Chrome.<br/>Right-click the page and click “Inspect Element”<br/>Use the magnifying glass on the bottom-left of the page to click on elements of the page and look at their properties.<br/><strong>Happy coding!</strong><br/>Forgot how to submit exercises?</p>
+<p></p>
+<p><strong>Element Search </strong></p>
+<p><br/><br/><strong>Exercise 20 (and Solution)</strong></p>
+<p><br/>Write a function that takes an ordered list of numbers (a list where the elements are in order from smallest to largest) and another number. The function decides whether or not the given number is inside the list and returns (then prints) an appropriate boolean.</p>
+<p>Extras:</p>
+<p>Use binary search.<br/><strong>Discussion</strong><br/>Topics:</p>
+<p>Booleans - True and False<br/>Equality testing<br/>Binary search<br/><strong>Booleans</strong><br/>When you are writing programs, there is often a time when you need to make a decision about something based on the truthfulness of something else. Basically, you need to make a decision based on whether something is TRUE or something is FALSE.</p>
+<p>An obvious example is when using conditionals:</p>
+<p>michele_age = 22<br/> truth_value = michele_age &gt; 17<br/> if (truth_value):<br/> print("Michele can see a rated R movie")<br/>(We talked about this idea of conditionals in a previous post.)</p>
+<p>But what is happening behind the scenes is that the statement michele_age &gt; 17 is being evaluated into a type that is either True or False. This is then getting stored inside the variable truth_value, and then the decision is being made inside the conditional.</p>
+<p>Here is another example:</p>
+<p>while True:<br/> age = input("How old are you? ")<br/> if age &gt;= 17: <br/> print("can see a rated R movie")<br/> elif age &lt; 17 and age &gt; 12:<br/> print("can see a rated PG-13 movie")<br/> else: <br/> print("can only see rated PG movies")</p>
+<p>What the while True statement does at the beginning of the code segment is continue asking for an age and printing a response - it never stops. (To stop it, press CTRL-C in a terminal or in the Python shell).</p>
+<p>These types - True and False are called boolean types or boolean variables. They can only take on two values, either True or False.</p>
+<p>For more extensive reading on Python booleans, take a look at these resources.</p>
+<p><strong>Equality testing on strings</strong><br/>Scenarios come up where you need to test if things are equal to each other - numbers or strings or something else. We covered this idea in a previous post, but it is worth returning to again, this time for strings.</p>
+<p>Good thing it’s easy!</p>
+<p>Remember, comparing numbers for equality is done with an == sign, like so:</p>
+<p>age = 21<br/> if age == 21:<br/> print("You are 21!")<br/> elif age &gt; 21:<br/> print("You're old.")<br/> else:<br/> print("Young one!")<br/>Turns out, comparing strings is equally (hehe..) simple, using a == to check for equality and != to check for inequality.</p>
+<p>password = "unsafepassword"<br/> if password == "unsafepassword":<br/> print("You may enter.")<br/> else:<br/> print("Try again!")<br/>Or, a more practical password-checking piece of code:</p>
+<p>real_password = "unsafepassword"<br/> user_password = input("Enter the password: ")<br/> while user_password != real_password:<br/> user_password = input("Enter the password: ")<br/> print("You may enter!")</p>
+<p><strong>Binary search</strong><br/>There are a number of ways to search for elements in a list, and there is no one correct way to do so. The point of this exercise is to get you thinking about possible ways to search for elements in the list, in an entire sequence of exercises about lists, searching, and sorting. This exercise might seem silly and easy at first, but the more you dive into this topic, the more difficult it becomes.</p>
+<p>The word “binary” means there are two choices (in computers, often this is 0 or 1, but it really means any choice between two things). “Search” is to look for something. So the main idea behind binary search is to look for something in a way that gives you a decision tree for where to look, containing two choices. Let me give you an example:</p>
+<p>Let’s take the list a = [1, 3, 5, 30, 42, 43, 500]. It is an “ordered list”, or a list where the elements in the list go from smaller to larger. Let’s say we want to know whether the element 9 is in the list or not. Here is what we do:</p>
+<p>Look at the middle element in the list - it is ‘30’. * ‘9 &lt; 30’, so let us ignore the elements to the right of ‘30’.<br/>The new list we are looking at is now [1, 3, 5].<br/>Look at the middle element in this new list - it is 3.<br/>‘9 &gt; 3’, so ignore the elements to the left of 3.<br/>The new list we are looking at is [5].<br/>The list has one element and it is not 9.<br/>9 is not in the list.<br/>What the example shows is that in an ordered list, knowing how the element you are looking for compares to another element in the list splits the list in two - one half where the element can be, and one where it definitely cannot be. In the case where our list contains millions of elements, knowing that we can cut the “search space” in half is a great increase in efficiency.</p>
+<p>When you are writing the solution, first try to write it without binary search. Then when you want to try implementing binary search, write a separate function. In the solution I will give an example for how to write a binary search in Python.</p>
+<p><strong>Happy coding!</strong><br/>Forgot how to submit exercises?</p>
+<p></p>
+<p><strong>解碼網頁</strong> <br/>這是此博客的第一個4辣椒練習！我們將看看人們的想法，並決定將來是否繼續進行4辣椒練習。</p>
+<br />hw3 << <a href='hw3.html'>Previous</a> <a href='練習17（和解決方案）.html'>Next</a> >> 練習17（和解決方案）</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
